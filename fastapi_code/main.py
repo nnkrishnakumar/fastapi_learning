@@ -22,3 +22,6 @@ def blog_id(id):
 def comments(id):
     return {'data':{'1','2'}}
 
+@app.get("/route_int/{id}")
+def route_int(id:int):
+    return {"data":id}
