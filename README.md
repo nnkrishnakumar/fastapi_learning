@@ -40,3 +40,22 @@ def route_int(id:int):            # remove int datatype infront of id to solve
 
 Query parameter
 ---------------
+
+this is the code :
+
+@app.get('/blog')
+def index(limit,publish:bool):
+    # only get 10 published blogs
+    if publish:
+        return {'data':f'{limit} published blogs from the db'}
+    else:
+        return {'data':f'{limit} blogs from the db'}
+    
+
+output:
+-------
+this is the url: http://127.0.0.1:8000/blog?limit=10&publish=True
+
+{
+"data": "10 published blogs from the db"
+}
