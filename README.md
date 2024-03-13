@@ -37,3 +37,6 @@ def route_int(id:int):            # remove int datatype infront of id to solve
 
 
 ===============================================================================
+
+Query parameter
+---------------
